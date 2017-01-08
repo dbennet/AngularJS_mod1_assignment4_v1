@@ -1,10 +1,9 @@
 <br>
 <h3>Categories</h3>
 <ol>
-  <li ng-repeat="item in $ctrl.categories" 
-  ui-sref="menuItems({itemName: item.short_name})">
+  <li ng-repeat="item in $ctrl.categories">
    {{ item.name }} , {{item.short_name}}
-   <a ui-sref= "menuCategories">Click here for more info...</a>
+   <a ui-sref= "menuItems">Click here for more info...</a>
   </li>
 </ol>
 
