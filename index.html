@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Menu With Events</title>
+  </head>
+  <body>
+    <h1>David's Menu With Events:</h1>
+    
+    <a ui-sref="home">Home</a>
+    <ui-view></ui-view>
+    
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/jquery-3.1.0.min.js"></script>
+
+    <!-- Modules -->
+
+    <script src="src/menu/menuapp.module.js"></script>
+    <script src="src/data/data.module.js"></script>
+    
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'data' module artifacts -->
+    <script src="src/data/categories.component.js"></script>
+    <script src="src/data/items.component.js"></script>
+    <script src="src/data/menudata.controller.js"></script>
+    <script src="src/data/menudata.service.js"></script>
+  </body>
+</html>
