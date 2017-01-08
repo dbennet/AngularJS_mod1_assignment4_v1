@@ -15,7 +15,8 @@ function MenuItemService($http) {
           url: ("https://davids-restaurant.herokuapp.com/menu_items.json?category="+categoryShortName)
         });
 
-        console.log("Here is the response for menu_items.json" + response);
+        console.log("Here is the response for menu_items.json");
+        console.log(response);
         return response;
     };
  
