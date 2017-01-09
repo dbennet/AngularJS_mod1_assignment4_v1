@@ -12,7 +12,7 @@ angular.module('Data')
 MenuItemController.$inject = ['nitems'];
 function MenuItemController(nitems) {
   var mt = this;
-  mt.items = nitems.data;
+  mt.items = nitems.data.menu_items;
 
    //var promise = MenuDataService.getAllCategories();
   
