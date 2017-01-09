@@ -9,8 +9,8 @@ angular.module('Data')
 
 
 
-MenuItemController.$inject = ['items'];
-function MenuItemController(items) {
+MenuItemController.$inject = ['nitems'];
+function MenuItemController(nitems) {
   var mt = this;
   mt.items = nitems.data;
 
