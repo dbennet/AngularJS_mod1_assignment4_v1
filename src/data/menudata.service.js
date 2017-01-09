@@ -21,7 +21,7 @@ function MenuDataService($http) {
     };
  
 
-
+    /*
     service.getItemsForCategory = function () {
       var response = $http({
           method: "GET",
@@ -31,6 +31,7 @@ function MenuDataService($http) {
         console.log("Here is the response for menu_items.json" + response);
         return response;
     };
+    */
  
 }
 

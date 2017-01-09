@@ -32,17 +32,17 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
   })
   
   .state('menuItems', {
-    //url: '/menu-items/{itemName}',
-    url: '/menu-items',
+    url: '/menu-items/{itemName}',
+    //url: '/menu-items',
     templateUrl: 'src/menu/menuitems.template.html',
     controller: 'MenuItemController as mt',
     resolve: {
-      //item: ['$stateParams', 'MenuItemService',
-      //      function ($stateParams, MenuItemService) {
-      //        return MenuItemService.getItemsForCategory($stateParams.itemName);
-      //      }]
-      nitems: ['MenuItemService', function (MenuItemService) {
-        return MenuItemService.getItemsForCategory();
+       nitems: ['$stateParams', 'MenuItemService',
+            function ($stateParams, MenuItemService) {
+              return MenuItemService.getItemsForCategory($stateParams.itemName);
+            }]
+      //nitems: ['MenuItemService', function (MenuItemService) {
+      //  return MenuItemService.getItemsForCategory();
       }]
     }
   });
